@@ -1,16 +1,38 @@
+/* Header solunda logo ve yanında başlık için flex container */
+.header-flex {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.site-logo {
+    height: 216px;
+    width: 216px;
+    border-radius: 36px;
+    object-fit: cover;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 4px;
+}
+
+.header-flex h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+}
 body {
     font-family: Arial, sans-serif;
-    background: url('kayseri_internet_ariza_logo.svg') no-repeat center center fixed;
-    background-size: cover;
+    background: #fff;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #3498db;
+    background: #34a853;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
+    position: relative;
 }
 
 nav ul {
