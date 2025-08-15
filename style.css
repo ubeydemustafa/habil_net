@@ -33,6 +33,8 @@ header {
     padding: 20px 0;
     text-align: left;
     position: relative;
+    min-height: 256px;
+    height: 256px;
 }
 
 nav ul {
