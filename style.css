@@ -1,3 +1,17 @@
+p {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 .header-row {
     display: flex;
     align-items: center;
@@ -26,6 +40,16 @@ Header solunda logo ve yanında başlık için flex container
 .site-logo {
     height: 256px;
     width: 256px;
+    border-radius: 36px;
+    object-fit: cover;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 4px;
+}
+
+.site-image {
+    height: 128px;
+    width: 128px;
     border-radius: 36px;
     object-fit: cover;
     background: #fff;
@@ -70,6 +94,8 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.2s;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
 nav a:hover {
@@ -93,4 +119,36 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .header-row {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 0;
+  }
+  .header-flex, header nav {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .site-logo, .site-image {
+    height: 64px;
+    width: 64px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  main {
+    padding: 10px;
+    margin: 0;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
