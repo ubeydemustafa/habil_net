@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     height: 360px;
+    background: #2b8a3e;
 }
 
 .header-flex {
@@ -23,12 +24,12 @@ Header solunda logo ve yanında başlık için flex container
 
 
 .site-logo {
-    height: 128px;
-    width: 128px;
-    /*border-radius: 36px;*/
+    height: 256px;
+    width: 256px;
+    border-radius: 36px;
     object-fit: cover;
     background: #fff;
-    /*box-shadow: 0 2px 8px rgba(0,0,0,0.10);*/
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     padding: 4px;
 }
 /*
